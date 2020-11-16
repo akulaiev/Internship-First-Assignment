@@ -1,0 +1,30 @@
+{
+    "allFunctionNames" : ["Is Similar", "Permutations", "Is Simple Number", "Average Number", "Triple letter words count"],
+    "allFunctions" : [
+        {
+            "functionName" : "Is Similar",
+            "inputFieldsNumber" : 3,
+            "inputNames" : ["Enter the first string: a", "Enter the second string: b", "Enter the max number of different symbols: n"]
+        },
+        {
+            "functionName" : "Permutations",
+            "inputFieldsNumber" : 1,
+            "inputNames" : ["Enter the string: s"]
+        },
+        {
+            "functionName" : "Is Simple Number",
+            "inputFieldsNumber" : 1,
+            "inputNames" : ["Enter the number to check: n"]
+        },
+        {
+            "functionName" : "Average Number",
+            "inputFieldsNumber" : 1,
+            "inputNames" : ["Enter the comma separated numeric array"]
+        },
+        {
+            "functionName" : "Triple letter words count",
+            "inputFieldsNumber" : 1,
+            "inputNames" : ["Enter the number of letters: n"]
+        }
+    ]
+}
