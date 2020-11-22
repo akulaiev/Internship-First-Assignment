@@ -9,13 +9,12 @@ import Foundation
 
 enum FunctionNamesEnum: String {
     case isSimilar = "Is Similar", permulations = "Permutations",
-         isSimpleNumber = "Is Simple Number", averageNumber = "Average Number",
-         tripleLetterWordsCpint = "Triple letter words count"
+         isSimpleNumber = "Is Primary", averageNumber = "Average Number",
+         tripleLetterWordsCount = "Triple letter words count"
 }
 
 struct AllFunctions: Codable {
     let allFunctions: [FunctionSignitureInfo]
-    let allFunctionNames: [String]
 }
 
 struct FunctionSignitureInfo: Codable {

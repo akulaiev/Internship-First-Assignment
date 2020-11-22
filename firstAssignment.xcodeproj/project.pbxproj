@@ -15,7 +15,8 @@
 		2D54BC242560272F00ED4D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D54BC232560272F00ED4D95 /* Assets.xcassets */; };
 		2D54BC272560272F00ED4D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D54BC252560272F00ED4D95 /* LaunchScreen.storyboard */; };
 		2D54BC3325602F9600ED4D95 /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54BC3225602F9600ED4D95 /* TasksListViewController.swift */; };
-		2D54BC3625602FBE00ED4D95 /* TaskImplementationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54BC3525602FBE00ED4D95 /* TaskImplementationViewController.swift */; };
+		2D54BC3625602FBE00ED4D95 /* InputOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54BC3525602FBE00ED4D95 /* InputOutputViewController.swift */; };
+		2D91BFBB256AA55200D9E547 /* MethodsImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91BFBA256AA55200D9E547 /* MethodsImplementations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		2D54BC262560272F00ED4D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D54BC282560272F00ED4D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D54BC3225602F9600ED4D95 /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
-		2D54BC3525602FBE00ED4D95 /* TaskImplementationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskImplementationViewController.swift; sourceTree = "<group>"; };
+		2D54BC3525602FBE00ED4D95 /* InputOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOutputViewController.swift; sourceTree = "<group>"; };
+		2D91BFBA256AA55200D9E547 /* MethodsImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsImplementations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +66,12 @@
 			children = (
 				2D54BC1A2560272E00ED4D95 /* AppDelegate.swift */,
 				2D54BC1C2560272E00ED4D95 /* SceneDelegate.swift */,
+				2D91BFBA256AA55200D9E547 /* MethodsImplementations.swift */,
 				2D54BC3125602F1000ED4D95 /* ViewControllers */,
 				2D54BC3025602EF600ED4D95 /* Storyboards */,
 				2D54BC232560272F00ED4D95 /* Assets.xcassets */,
 				2D54BC282560272F00ED4D95 /* Info.plist */,
-				2D25E96F25619AE20013AD3F /* ManageFunctionsSignatures.swift */,
-				2D25E97325619CA50013AD3F /* functionsInfo.json */,
+				2D91BFBF256AC38400D9E547 /* Helpers */,
 			);
 			path = firstAssignment;
 			sourceTree = "<group>";
@@ -87,9 +89,18 @@
 			isa = PBXGroup;
 			children = (
 				2D54BC3225602F9600ED4D95 /* TasksListViewController.swift */,
-				2D54BC3525602FBE00ED4D95 /* TaskImplementationViewController.swift */,
+				2D54BC3525602FBE00ED4D95 /* InputOutputViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2D91BFBF256AC38400D9E547 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2D25E96F25619AE20013AD3F /* ManageFunctionsSignatures.swift */,
+				2D25E97325619CA50013AD3F /* functionsInfo.json */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D91BFBB256AA55200D9E547 /* MethodsImplementations.swift in Sources */,
 				2D54BC1B2560272E00ED4D95 /* AppDelegate.swift in Sources */,
-				2D54BC3625602FBE00ED4D95 /* TaskImplementationViewController.swift in Sources */,
+				2D54BC3625602FBE00ED4D95 /* InputOutputViewController.swift in Sources */,
 				2D25E97025619AE20013AD3F /* ManageFunctionsSignatures.swift in Sources */,
 				2D54BC3325602F9600ED4D95 /* TasksListViewController.swift in Sources */,
 				2D54BC1D2560272E00ED4D95 /* SceneDelegate.swift in Sources */,

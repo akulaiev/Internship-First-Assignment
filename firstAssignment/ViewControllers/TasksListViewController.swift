@@ -23,14 +23,13 @@ class TasksListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let taskImplementationVC = segue.destination as! TaskImplementationViewController
+        let taskImplementationVC = segue.destination as! InputOutputViewController
         guard let functionsInfo = functions.functionInfo else {
             print("An error reading functions info json file has occured")
             return
         }
         taskImplementationVC.selectedFunctionName = FunctionNamesEnum(rawValue: functionsInfo.allFunctions[tasksListPickerView.selectedRow(inComponent: 0)].functionName)
         taskImplementationVC.pickedFunctionsSignature = functionsInfo.allFunctions[tasksListPickerView.selectedRow(inComponent: 0)]
-        taskImplementationVC.allFunctionNames = functionsInfo.allFunctionNames
     }
 }
 
@@ -44,7 +43,7 @@ extension TasksListViewController: UIPickerViewDelegate, UIPickerViewDataSource 
         guard let functionsInfo = functions.functionInfo else {
             return 0
         }
-        return functionsInfo.allFunctionNames.count
+        return functionsInfo.allFunctions.count
     }
     
     
@@ -52,6 +51,6 @@ extension TasksListViewController: UIPickerViewDelegate, UIPickerViewDataSource 
         guard let functionsInfo = functions.functionInfo else {
             return nil
         }
-        return functionsInfo.allFunctionNames[row]
+        return functionsInfo.allFunctions[row].functionName
     }
 }

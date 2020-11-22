@@ -1,5 +1,4 @@
 {
-    "allFunctionNames" : ["Is Similar", "Permutations", "Is Simple Number", "Average Number", "Triple letter words count"],
     "allFunctions" : [
         {
             "functionName" : "Is Similar",
@@ -12,7 +11,7 @@
             "inputNames" : ["Enter the string: s"]
         },
         {
-            "functionName" : "Is Simple Number",
+            "functionName" : "Is Primary",
             "inputFieldsNumber" : 1,
             "inputNames" : ["Enter the number to check: n"]
         },
